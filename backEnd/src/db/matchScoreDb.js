@@ -142,6 +142,9 @@ function getExtraObj(extra) {
 }
 
 function getMatchStatus(io, result, data, data1) {
+  
+  data.sort((a,b) => a.innings - b.innings);
+  data1.sort((a,b) => a.innings - b.innings);
 
   let ball;
   let sql;

@@ -22,8 +22,6 @@ const dbConn = mysql.createConnection({
 });
 
 
-
-
 // const dbConn = mysql.createConnection({
 //   host: 'gateway01.us-west-2.prod.aws.tidbcloud.com',
 //   port: 4000,
