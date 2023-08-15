@@ -93,6 +93,8 @@ function getScoreWicketOver(io, result, resultStatus) {
             };
           });
 
+          data.sort((a,b) => a.innings - b.innings);
+
           data[0].isBatting = data[1].TotalRuns === null ? true : false;
           data[1].isBatting = data[1].TotalRuns === null ? false : true;
 
